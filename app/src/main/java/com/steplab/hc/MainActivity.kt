@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
       val zone = ZoneId.systemDefault().rules.getOffset(start)
       client.insertRecords(listOf(StepsRecord(
        startTime = start, endTime = end, startZoneOffset = zone, endZoneOffset = zone,
-       count = delta, metadata = Metadata.manualEntry()
+       count = delta, metadata = Metadata()
       )))
       count = targetCount
      }
