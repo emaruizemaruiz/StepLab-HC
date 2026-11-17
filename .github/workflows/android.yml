@@ -1,4 +1,5 @@
 name: Build Android APK
+# Trigger build for StepLab HC test
 on:
   push:
     branches: [main]
